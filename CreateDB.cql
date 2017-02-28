@@ -1,5 +1,5 @@
 CREATE (s:Student {name:'Martin Repicky'}, id: 'G00328337', group:'B')
-CREATE (r:Room {number:436, capacity: 36, name:'CR5'})
+CREATE (r436:Room {number:436, capacity: 36, name:'CR5'})
 CREATE (l:Lecturer {name:'Ian McLoughlin'})  //courses:[40470,41891,40005,48901,45699,48898,50669]})
 CREATE (p:Program {name:'BSc in Software Development L7 Yr 3 Sem 6', id:'G-KSOFG73'})
 CREATE
@@ -15,3 +15,6 @@ CREATE
     (p)-[:COURSE]->(cSSR),
     (p)-[:COURSE]->(cST),	
     (s)-[:PROGRAM]->(p)
+CREATE (l)-[:TEACHES]->(cGraph)
+CREATE (l)-[:T12]->(r436) //T12 - Tueasday 12:00 
+CREATE (cGraph)-[:T12]->(r436) 
