@@ -1,32 +1,9 @@
 # Graph-Theory-Timetable
-## Introduction
-project requirements
+Prototype database for timetable system using Neo4j.
 
-### GMIT timetable
-Room, Student, Lecturer structure. Challenges described.
+## Instructions
+This repository contains prototype Neo4j database located in Neo4j_db. Just download the folder and select it when you starting your Neo4j desktop client.  
+Database can be also be created by running _CreateDB.cql_ Cypher file, or just simply coping and pasting its content to your Neo4j browser window.  
+**This will delete all the previous data in your database before it will create any new data!!!**  
 
-### Every problem is a graph problem.
-Why use graph theory to improve the timetable management system
-
-## Design
-Describe in detail function of nodes and relationships in this project. What is gonna be implemented as Node and what as relationship. 
-
-### Future database expansion
-Explain and demonstrate how simple is to expand on DB, just by adding new properties to nodes. New skills of lecturer, new modules for student.
-
-### Use of Graph database.
-!Include advantages for creating new timetable, only by dropping relations, keeping all nodes.!
-
-## Implementation
-
-### Create database
-How to create first nodes and relations between them. Include Cypher queries.
-
-### Student queries
-Demonstrate and explain query for individual student timetable.
-
-### Room queries
-Demonstrate and explain query for specific room availability.
-
-### Lecture queries
-Demonstrate and explain query for specific room availability.
+You can find detailed documentation about this project in Wiki section of this repository.
